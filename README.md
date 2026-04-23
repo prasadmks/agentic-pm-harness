@@ -24,7 +24,7 @@ Each skill runs independently or chains sequentially. State persists across step
 
 Most AI-assisted workflows produce text in a chat window — no memory, each session starts from scratch. This harness is built differently: every skill writes structured output to disk, and the next skill reads it.
 
-| | Prompt-based workflow | Agentic Harness |
+| Characteristics | Prompt-based workflow | Agentic Harness |
 |---|---|---|
 | State | Lost after each session | Persists on disk across steps |
 | Output | Text in chat | Structured markdown artifacts |
