@@ -15,11 +15,8 @@ This harness changes the architecture: each skill produces a structured artifact
 ## How It Works
 
 ```mermaid
-flowchart TD
-    A([Company Context]) --> B([Market Research])
-    B --> C([User Research])
-    C --> D([PRD])
-    D --> E([Prototype])
+flowchart LR
+    A([Context]) --> B([Research]) --> C([User Research]) --> D([PRD]) --> E([Prototype])
 
     style A fill:#e8e4f8,stroke:#7F77DD,color:#3C3489
     style B fill:#e1f5ee,stroke:#1D9E75,color:#085041
