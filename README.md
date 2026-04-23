@@ -51,19 +51,20 @@ The mock skill reads your `company-context/` folder and your PRD automatically �
 
 ---
 
-## Examples
+## Example
 
-Two worked examples showing what the harness produces across different domains:
-
-### Amazon Ads
-Full pipeline output for Amazon's advertising platform — used as a reference for advertiser-facing product work.
-
-→ [`examples/amazon-ads/`](examples/amazon-ads/)
+A worked example showing what the harness produces end to end:
 
 ### Charter Communications — Spectrum Aura
 Full pipeline output for Charter's agentic AI customer experience platform — the production system serving 32M+ customers across 250M annual contacts.
 
-→ [`examples/charter-spectrum/`](examples/charter-spectrum/)
+→ [`examples/charter-spectrum/`](https://github.com/prasadmks/agentic-pm-harness/tree/main/examples/charter-spectrum)
+
+Includes:
+- `company-overview.md` — company snapshot, mission, business model, key facts
+- `user-persona.md` — Marcus Webb composite persona, goals, pain points, day in the life
+- `product-description.md` — Aura platform, Know/Act/Trust architecture, use cases, integrations
+- `competitive-landscape.md` — Comcast, AT&T, T-Mobile, ASAPP, Google CCAI comparison
 
 ---
 
@@ -79,11 +80,6 @@ agentic-pm-harness/
 │   ├── prd.md
 │   └── mock.md
 └── examples/
-    ├── amazon-ads/
-    │   ├── company-overview.md
-    │   ├── user-persona.md
-    │   ├── product-description.md
-    │   └── competitive-landscape.md
     └── charter-spectrum/
         ├── company-overview.md
         ├── user-persona.md
