@@ -14,16 +14,8 @@ This harness changes the architecture: each skill produces a structured artifact
 
 ## How It Works
 
-```mermaid
-flowchart LR
-    A([Context]) --> B([Research]) --> C([User Research]) --> D([PRD]) --> E([Prototype])
+![Agentic PM Harness Architecture](https://raw.githubusercontent.com/prasadmks/agentic-pm-harness/main/images/agentic-pm-harness-architecture.png)
 
-    style A fill:#e8e4f8,stroke:#7F77DD,color:#3C3489
-    style B fill:#e1f5ee,stroke:#1D9E75,color:#085041
-    style C fill:#e1f5ee,stroke:#1D9E75,color:#085041
-    style D fill:#e1f5ee,stroke:#1D9E75,color:#085041
-    style E fill:#e8e4f8,stroke:#7F77DD,color:#3C3489
-```
 Each skill runs independently or chains sequentially. State persists across steps — the Prototype skill reads the PRD and company context automatically, no manual input required.
 
 ---
@@ -52,12 +44,14 @@ agentic-pm-harness/
 │   ├── user-research.md             ← JTBD, findings, pain points, implications
 │   ├── prd.md                       ← full PRD with P0/P1/P2 requirements
 │   └── mock.md                      ← clickable HTML prototype from P0 requirements
-└── examples/
-    └── charter-spectrum/
-        ├── company-overview.md      ← Spectrum Aura platform context
-        ├── user-persona.md          ← composite persona, goals, pain points
-        ├── product-description.md   ← Know/Act/Trust architecture, use cases
-        └── competitive-landscape.md ← Comcast, AT&T, T-Mobile, ASAPP comparison
+├── examples/
+│   └── charter-spectrum/
+│       ├── company-overview.md      ← Spectrum Aura platform context
+│       ├── user-persona.md          ← composite persona, goals, pain points
+│       ├── product-description.md   ← Know/Act/Trust architecture, use cases
+│       └── competitive-landscape.md ← Comcast, AT&T, T-Mobile, ASAPP comparison
+└── images/
+    └── agentic-pm-harness-architecture.png
 ```
 
 The `examples/charter-spectrum/` folder shows full pipeline output for Spectrum Aura — Charter's agentic AI platform serving 32M+ customers across 250M annual contacts.
